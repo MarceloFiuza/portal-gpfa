@@ -1,6 +1,8 @@
 # GitHub — criação e uso do repositório
 
-Este roteiro é para uma pasta nova. Os comandos serão executados pelo usuário; este pacote não criou repositório nem fez push.
+> **Situação atual:** a criação do repositório e o primeiro envio já foram concluídos. O repositório está em https://github.com/MarceloFiuza/portal-gpfa, com o commit inicial em `main` sincronizado com `origin/main`.
+>
+> Este documento é preservado como referência para uma cópia nova ou para consulta do fluxo. Na cópia atual, **não repetir** `git init`, `git remote add origin` nem o primeiro commit e push. Os passos das seções 2 a 4 já foram executados; use as seções 5 e 6 para o trabalho seguinte e para a cópia no computador da universidade.
 
 ## 1. Pasta local
 

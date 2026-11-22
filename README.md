@@ -4,7 +4,9 @@ Projeto acadêmico de portal de visibilidade científica e gestão de projetos d
 
 ## Estado real
 
-Este pacote contém somente documentação inicial. Não existe aplicação implementada, compilada ou validada neste pacote. O desenvolvimento será conduzido pelo OpenCode, com revisão humana e validação em Windows na universidade.
+Repositório: https://github.com/MarceloFiuza/portal-gpfa
+
+Contém somente documentação inicial versionada em `main`. Não existe aplicação implementada, compilada ou validada. O desenvolvimento será conduzido pelo OpenCode, com revisão humana e validação em Windows na universidade.
 
 ## Escopo
 
@@ -24,7 +26,7 @@ Este pacote contém somente documentação inicial. Não existe aplicação impl
 
 ## Ambientes
 
-Edição e verificações disponíveis: Linux/VSCode. Execução oficial do Web Forms: Windows da universidade, com Visual Studio e ferramentas compatíveis com o projeto. ASP.NET Web Forms usa .NET Framework; instalar o SDK moderno do .NET no Linux não fornece seu runtime.
+Ambiente de edição: Linux, com VSCode. Execução e validação do Web Forms estão previstas no Windows da universidade, com Visual Studio e ferramentas compatíveis com o projeto. ASP.NET Web Forms usa .NET Framework; instalar o SDK moderno do .NET no Linux não fornece seu runtime.
 
 Versão do .NET Framework, versão de C# e ferramentas do laboratório: pendentes. Não criar uma solução com versão presumida. Primeiro conferir o ambiente e registrar a decisão em `docs/PENDENCIAS.md`. Não há comandos de execução definidos enquanto não houver projeto real.
 

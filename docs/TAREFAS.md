@@ -1,11 +1,11 @@
 # Plano incremental — Parte 1
 
-Legenda: `[ ]` pendente; `[x]` concluído com evidência. Este documento não atesta implementação. A documentação inicial foi preparada, mas ainda precisa ser lida no repositório pelo agente.
+Legenda: `[ ]` pendente; `[x]` concluído com evidência. Este documento não atesta implementação. A documentação inicial foi lida no repositório e o estado real da pasta foi conferido; nenhuma atividade de código foi executada.
 
 ## T00 — Preparação e ambiente
 
-- [ ] Extrair os arquivos na nova pasta e criar o repositório conforme GITHUB.md.
-- [ ] Conferir instruções e estado real dos arquivos.
+- [x] Extrair os arquivos na nova pasta e criar o repositório conforme GITHUB.md. Evidência: repositório em https://github.com/MarceloFiuza/portal-gpfa com um commit inicial em `main`.
+- [x] Conferir instruções e estado real dos arquivos. Evidência: `AGENTS.md` e `docs/` lidos; árvore de trabalho limpa e `main` sincronizada com `origin/main`; ausência de solução, projeto ou código.
 - [ ] Conferir P01 no computador da universidade e registrar a versão aprovada.
 - [ ] Confirmar tipo de projeto e comandos reais de compilação/execução.
 
