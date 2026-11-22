@@ -1,0 +1,33 @@
+# Visual Studio e configurações pessoais
+.vs/
+.vscode/
+*.suo
+*.user
+
+# Compilação e dependências
+[Bb]in/
+[Oo]bj/
+packages/
+TestResults/
+*.log
+
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.publishsettings
+*.pubxml.user
+**/PublishProfiles/*.pubxml
+Web.local.config
+connectionStrings.local.config
+
+# Bancos e backups locais
+*.mdf
+*.ldf
+*.bak
+
+# Sistema
+.DS_Store
+Thumbs.db
