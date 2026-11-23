@@ -1,24 +1,37 @@
 # Prompt inicial para o OpenCode
 
-Copie o texto abaixo na ferramenta aberta na raiz do novo repositório.
+> **Documento histórico.** Este foi o prompt do primeiro bloco, já executado. Consulte `README.md` e `docs/TAREFAS.md` para o estado atual. Não use este texto para recriar a estrutura nem como autorização para repetir etapas concluídas.
+
+Prompt usado no início do desenvolvimento. Mantido para registro na raiz do repositório.
 
 ---
 
-Estamos iniciando o Portal GPFA, trabalho de Programação Web em C# e ASP.NET Web Forms. Este é um projeto novo; não use regras nem código da concessionária.
+Estamos desenvolvendo o Portal GPFA, trabalho de Programação Web em C# e ASP.NET Web Forms. Este é um projeto novo; não use regras nem código da concessionária.
 
-Leia AGENTS.md, README.md e todos os documentos de docs/. Confira o estado real da pasta e do Git, preservando alterações existentes.
+Leia `AGENTS.md`, `README.md` e todos os documentos de `docs/`. Confira o estado real da pasta e do Git, preservando alterações existentes. Não faça commit nem push.
 
-Execute inicialmente apenas um diagnóstico de preparação:
+Decisões técnicas já aprovadas pelo usuário:
 
-1. Resuma requisitos da Parte 1, regras acadêmicas e divisão de responsabilidades proposta.
-2. Confira coerência entre os documentos e a existência de instruções adicionais aplicáveis.
-3. Identifique decisões pendentes que impeçam criar a solução ou implementar tarefas.
-4. Proponha a menor primeira tarefa após a resolução dos bloqueios.
+- C# com `LangVersion` 7.3.
+- .NET Framework 4.8.
+- ASP.NET Web Forms no modelo Web Application clássico.
+- Solução `.sln` e projeto `.csproj` compatíveis com Visual Studio 2022.
+- Um único projeto Web, com separação lógica de responsabilidades em pastas.
+- Edição no Linux; compilação e execução reais no Windows da universidade.
 
-A versão do .NET Framework e as ferramentas da universidade ainda não foram confirmadas. Não assuma uma versão, não crie/configure solução ou código dependente desse alvo e não instale ferramentas para contornar a ausência de Windows. Informe exatamente quais dados do laboratório preciso trazer para resolver P01.
+A escolha técnica encerra a parte de decisão de P01; a compatibilidade e a execução no laboratório continuam pendentes como P01b. Não afirme que as ferramentas estão instaladas.
 
-O desenvolvimento autorizado é somente da Parte 1, com consulta, navegação e dados fictícios em memória. Não implementar Parte 2, banco, CRUD persistente, autenticação ou relatórios. Verba por pesquisador fica pendente, sem fórmula presumida.
+Implemente somente o primeiro bloco da Parte 1:
 
-Não altere os documentos para transformar dúvida em decisão. Caso encontre ambiguidade nova que afete o trabalho, explique e aguarde esclarecimento antes de implementar a parte afetada. Não faça commit, push nem publicação.
+1. Crie a solução e o projeto Web Forms com alvo explícito .NET Framework 4.8 e C# 7.3.
+2. Separe domínio, aplicação, infraestrutura em memória e apresentação Web sem classes ou projetos vazios.
+3. Implemente Master Page com cabeçalho, navegação e rodapé.
+4. Implemente página inicial, página de membros e página de projetos, com estado vazio informativo quando não houver dados.
+5. Use CSS local simples, responsivo e acessível.
+6. Não implemente entidades completas, massa de dados, cadastros, históricos, banco, login ou relatórios.
 
-Ao terminar, apresente diagnóstico, bloqueios, verificações realizadas e próximo passo mínimo. Não declare build ou execução Web Forms aprovados por análise estática ou stubs.
+No Linux, verifique apenas o que for possível: estrutura, XML, referências, namespaces, `Inherits`, controles e ContentPlaceHolders. Não altere o alvo para executar no Linux e não use stubs para declarar o Web Forms validado.
+
+Atualize a documentação afetada, incluindo README, PENDENCIAS e TAREFAS, separando implementação de validação em Windows. Documente como abrir a solução, compilar e executar pelo IIS Express, quais páginas conferir e o que continua pendente.
+
+Ao terminar, apresente arquivos criados/alterados, arquitetura efetiva, verificações realizadas e roteiro mínimo de teste na universidade. Encerre o bloco para revisão. Não faça commit, push nem publicação. Não declare build ou execução Web Forms aprovados por análise estática ou stubs.

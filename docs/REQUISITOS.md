@@ -31,6 +31,8 @@ O enunciado cita pesquisadores, estudantes de pós-graduação, bolsistas de ini
 
 RN01 e RN03 coexistem: alunos são vinculados aos projetos; o trecho sobre participação de pesquisadores não elimina esse vínculo obrigatório.
 
+> **Limitação de implementação (P06):** o domínio atual exige pelo menos um vínculo de orientação, atual ou passado, e no máximo um atual. Isso permite estudante somente com histórico passado; a obrigatoriedade de orientador atual para todo estudante atual não está integralmente garantida enquanto P06 não definir como distinguir estudante atual de ex-estudante. Não criar status de ex-aluno para contornar a pendência.
+
 ## Funcionalidades não autorizadas nesta etapa
 
 A Parte 1 pede esqueleto visual e navegação em memória. Não presumir que todos os cadastros, edições e exclusões precisam ser implementados agora. Começar pela consulta com dados fictícios coerentes. Se o professor exigir manutenção em memória, confirmar e detalhar as operações antes de ampliar o escopo. As invariantes continuam obrigatórias para a carga inicial e para qualquer operação autorizada.

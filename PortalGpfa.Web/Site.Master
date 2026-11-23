@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="PortalGpfa.Web.SiteMaster" %>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%: Page.Title %></title>
+    <link rel="stylesheet" href='<%= ResolveUrl("~/Conteudo/Site.css") %>' />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="formPrincipal" runat="server">
+        <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+        <header class="cabecalho">
+            <div class="container cabecalho-conteudo">
+                <a class="marca" href='<%= ResolveUrl("~/Default.aspx") %>'>
+                    <span class="marca-sigla" aria-hidden="true">GPFA</span>
+                    <span class="marca-nome">Grupo de Pesquisa sobre Formigas Atômicas</span>
+                </a>
+
+                <nav aria-label="Navegação principal">
+                    <ul class="menu">
+                        <li>
+                            <asp:HyperLink ID="lnkInicio" runat="server" NavigateUrl="~/Default.aspx">Início</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="lnkMembros" runat="server" NavigateUrl="~/Membros.aspx">Membros</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="lnkProjetos" runat="server" NavigateUrl="~/Projetos.aspx">Projetos</asp:HyperLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="conteudo" class="container" tabindex="-1">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+        <footer class="rodape">
+            <div class="container">
+                <p>Portal GPFA — projeto acadêmico da disciplina de Programação Web.</p>
+                <p>&copy; <asp:Literal ID="litAno" runat="server" /> Grupo de Pesquisa sobre Formigas Atômicas.</p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

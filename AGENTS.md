@@ -10,18 +10,20 @@ Somente Parte 1, com dados em memória. A Parte 2 existe como contexto e não au
 
 ## Trate dúvidas explicitamente
 
-Não invente regras, requisitos ou informações do ambiente. Registre a dúvida, identifique a tarefa afetada e peça esclarecimento antes de implementá-la. Só prossiga em tarefas independentes quando já autorizadas. A versão do framework é pendência bloqueante para criar/configurar a solução Web Forms; não assumir 4.8 ou outra versão. A verba por pesquisador bloqueia apenas esse cálculo futuro.
+Não invente regras, requisitos ou informações do ambiente. Registre a dúvida, identifique a tarefa afetada e peça esclarecimento antes de implementá-la. Só prossiga em tarefas independentes quando já autorizadas. A escolha técnica está resolvida por decisão do usuário: C# 7.3, .NET Framework 4.8, ASP.NET Web Forms no modelo Web Application, Visual Studio 2022. A compatibilidade e a execução no laboratório continuam pendentes (P01b); não afirmar que as ferramentas já estão instaladas. A verba por pesquisador bloqueia apenas esse cálculo futuro.
 
 ## Código e responsabilidades
 
-- C# simples, compatível com o compilador confirmado no laboratório.
+- C# 7.3 simples, com alvo .NET Framework 4.8; validação do compilador e das ferramentas no laboratório ainda pendente.
 - Domínio sem dependência de System.Web, controles ASP.NET ou SQL.
 - Code-behind recebe entradas, chama serviços e apresenta resultados; não concentra regras ou consultas.
 - Repositórios em memória cuidam do armazenamento, não da renderização.
 - Use Master Page, controles de servidor e Data Binding reais.
 - Faça binding inicial sob `!IsPostBack` quando adequado. Recarregue após operações deliberadas; não apague entradas ou listas em todo postback.
 - Não acesse Session em Application_Start. Inicialize o estado por sessão e não o recrie em toda requisição.
-- Preserve invariantes ao atualizar relações. Uma falha não pode deixar estudante sem orientador/projeto nem projeto sem coordenador.
+- Na camada Web, acesse o estado apenas por `SessaoPortal.Obter()`; páginas, domínio e aplicação não acessam Session diretamente.
+- Preserve invariantes ao atualizar relações. Uma falha não pode deixar estudante sem vínculo de orientação/projeto nem projeto sem coordenador.
+- Mantenha os vínculos acadêmicos apenas nas coleções do agregado `EstadoPortal`; não duplique a mesma relação em listas mutáveis das entidades.
 - Evite interfaces genéricas, contêiner de injeção, CQRS, microserviços e camadas sem responsabilidade concreta.
 - Mantenha os arquivos .aspx, .aspx.cs e .designer.cs, quando aplicáveis, coerentes com o tipo de projeto. Confira Inherits, namespace, controles e referências no .csproj.
 - Codifique texto dinâmico na saída e aceite apenas URLs http/https nos links informados. Valide entradas no servidor nas operações implementadas.

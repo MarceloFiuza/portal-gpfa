@@ -81,9 +81,9 @@ git pull --ff-only
 git switch -c feat/estrutura-webforms
 ```
 
-Crie essa branch de implementação quando P01 estiver resolvida. Para planejamento prévio, use nome como `docs/revisao-inicial`.
+Crie a branch de implementação: a escolha técnica de P01 está resolvida, mas a conferência do laboratório (P01b) continua pendente. Para planejamento prévio, use nome como `docs/revisao-inicial`.
 
-Ao concluir uma alteração pequena, revise `git diff`, adicione arquivos específicos, faça commit e envie a branch. Abra Pull Request no GitHub para revisar antes de integrar à main. Não inclua credenciais, saídas de build ou configurações pessoais.
+Ao concluir uma alteração pequena, revise `git diff`, adicione arquivos específicos, faça commit e envie a branch. Abra Pull Request no GitHub para revisar antes de integrar à main. Não inclua credenciais, saídas de build, `.vs/`, `bin/`, `obj/` ou configurações pessoais.
 
 ## 6. No computador da universidade
 
